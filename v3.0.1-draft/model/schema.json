@@ -1697,11 +1697,11 @@
                     "hasEvidence",
                     "hasExample",
                     "hasHost",
-                    "hasInputs",
+                    "hasInput",
                     "hasMetadata",
                     "hasOptionalComponent",
                     "hasOptionalDependency",
-                    "hasOutputs",
+                    "hasOutput",
                     "hasPrerequisite",
                     "hasProvidedDependency",
                     "hasRequirement",
@@ -1838,11 +1838,11 @@
                 { "const": "spdx:Core/RelationshipType/hasEvidence" },
                 { "const": "spdx:Core/RelationshipType/hasExample" },
                 { "const": "spdx:Core/RelationshipType/hasHost" },
-                { "const": "spdx:Core/RelationshipType/hasInputs" },
+                { "const": "spdx:Core/RelationshipType/hasInput" },
                 { "const": "spdx:Core/RelationshipType/hasMetadata" },
                 { "const": "spdx:Core/RelationshipType/hasOptionalComponent" },
                 { "const": "spdx:Core/RelationshipType/hasOptionalDependency" },
-                { "const": "spdx:Core/RelationshipType/hasOutputs" },
+                { "const": "spdx:Core/RelationshipType/hasOutput" },
                 { "const": "spdx:Core/RelationshipType/hasPrerequisite" },
                 { "const": "spdx:Core/RelationshipType/hasProvidedDependency" },
                 { "const": "spdx:Core/RelationshipType/hasRequirement" },
@@ -1915,12 +1915,12 @@
                         "dataLicense": {
                             "$ref": "#/$defs/prop_SpdxDocument_dataLicense"
                         },
-                        "imports": {
+                        "import": {
                             "oneOf": [
                                 {
                                     "type": "array",
                                     "items": {
-                                        "$ref": "#/$defs/prop_SpdxDocument_imports"
+                                        "$ref": "#/$defs/prop_SpdxDocument_import_"
                                     }
                                 }
                             ]
@@ -1942,7 +1942,7 @@
         "prop_SpdxDocument_dataLicense": {
                 "$ref": "#/$defs/simplelicensing_AnyLicenseInfo_derived"
         },
-        "prop_SpdxDocument_imports": {
+        "prop_SpdxDocument_import_": {
                 "$ref": "#/$defs/ExternalMap_derived"
         },
         "prop_SpdxDocument_namespaceMap": {
